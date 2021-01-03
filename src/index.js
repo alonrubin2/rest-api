@@ -41,7 +41,6 @@ http.createServer((req, res) => {
         });
     }
     function postHandler(userName, newUserName) {
-
         readFile((users) => {
             users[newUserName] = users[userName];
             delete users[userName];
